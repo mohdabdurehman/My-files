@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*.navbar{
+    position: fixed;
+    background-color: #fafafa;
+}*/
+.navbar ul{
+    display: flex;
+    text-decoration: none;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 900px;
+}
+
+.navbar li{
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+.navbar img{
+    width: 130px;
+}
+
+.container{
+    background-image: url(home01.jpg);
+    height: 621px;
+    background-size: cover;
+    padding: 30px;
+    width: 1519px;
+}
+
+.banking{
+    margin-left: 60px;
+    padding: 70px;
+}
+
+.banking h1{
+    color: #fafafa;
+    font-size: 64px;
+    line-height: 76px;
+}
+
+.banking p{
+    color: #210f60;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+button{
+    color: #fafafa;
+    background-color: black;
+    margin-top: 90px;
+}
+
+.row{
+    display: flex;
+}
+.account{
+    margin-left: 30px;
+    background-color: #1dc99b;
+}
+
+.account:hover{
+    color: #1dc99b;
+}
+
+.account h4{
+    color: #210f60;
+}
+
+.account p{
+    color: #1dc99b;
+}
+
+

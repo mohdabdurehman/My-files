@@ -1,0 +1,95 @@
+body {
+  background-color: white;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.fundnow {
+  background-color: #333333;
+  padding: 12.6px;
+}
+.fundnow img {
+  margin-left: 300px;
+}
+.kirtalogo img {
+  background-color: #1e2b40;
+  padding: 20px;
+  height: 20px;
+}
+.navbar li {
+  display: inline;
+  text-decoration: underline;
+  list-style: none;
+  font-size: large;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.paragraph {
+  background-color: white;
+  margin: 50px 0px 0px 800px;
+  top: 15%;
+  color: black;
+  right: 5%;
+  line-height: 1.4em;
+  padding: 2em;
+  position: absolute;
+  width: 33em;
+  background: white;
+  opacity: 0.95;
+  box-shadow: inset 2px 2px 8px #55578a;
+}
+.paragraph a {
+  color: white;
+  list-style: none;
+}
+.paragraph img {
+  margin-left: 100px;
+  width: 200px;
+}
+.pics {
+  display: flex;
+  gap: 2rem;
+}
+figure {
+  position: relative;
+}
+figcaption {
+  position: absolute;
+  transform: translateX(15%);
+  width: 100%;
+  bottom: 0;
+}
+.pics figure img {
+  width: 250px;
+}
+.release {
+  margin-left: 800px;
+  background: white;
+  line-height: 30px;
+  padding: 10px;
+  border: 4px solid #dddfe3;
+}
+.news {
+  margin-left: 800px;
+  margin-top: 50px;
+}
+.container {
+  background-image: url("img8.png");
+  height: 400px;
+}
+.k img {
+  width: 60px;
+  margin: 40px;
+  background-color: black;
+  border-radius: 300px;
+  border: solid 15px;
+  float: left;
+}
+button {
+  background-color: #38a2f2;
+  padding: 10px;
+  border-radius: 10px;
+}
+.artist img {
+  width: 300px;
+}

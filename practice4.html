@@ -1,0 +1,32 @@
+<!-- create a box and fb8500
+button that changes with every click
+p tag says the name of the color  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+</head>
+<body>
+    <div class="changeColor">
+        <div class="para">
+            <p>The name of the color</p>
+         </div>
+        <button id="click">press </button>
+    </div>
+    <script>
+       let box = document.querySelector(".changeColor");
+       box.style.border = "solid black 2px";
+       box.style.backgroundColor = "#fb8500";
+       let para = document.querySelector(".para"); 
+       let but = document.getElementById("click");
+       let changeColor = document.querySelector(".changeColor");
+       
+
+       but.onclick = () =>{
+            changeColor.style.backgroundColor = "red";
+         }
+    </script>
+</body>
+</html>

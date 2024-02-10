@@ -1,0 +1,166 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: antiquewhite;
+}
+
+.login{
+    display: flex;
+    background-color: #8e8e8e;
+    height: 48px;
+    background-size: cover;
+
+}
+
+.login h4{
+    padding: 20px;
+    font-size: 13px;
+    color:#0d5bff ;
+    margin-left: 1000px;
+}
+
+.login button{
+    border-radius: 4px;
+    background-color: #0d5bff;
+    width: 107px;
+    height: 32px;
+    font-size: 16px;
+    text-align: center;
+    color: #fafafa;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navli{
+    
+    font-size: 16px;
+}
+
+.navli li:hover{
+    color: #0d5bff;
+}
+
+.navli li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 30px;
+
+}
+
+.navli ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.photo{
+    width: 50px;
+    margin-right: 700px;
+}
+
+.photo img{
+    width: 120px;
+}
+
+.mls{
+    background-color: #0d5bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.photo2 img{
+    width: 500px;
+    margin-left: 100px;
+}
+
+.para p{
+    color: #fafafa;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.head h1{
+    color: #fafafa;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.head p{
+    color: #fafafa;
+}
+
+.button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.buttons button{
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    color: #0d5bff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.box{
+    display:block;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-left: 100px;
+    width: 500px;
+}
+
+.journey{
+    display: flex;
+}
+
+.photo3 img{
+    width: 350px;
+    margin-left: 200px;
+}
+
+.box2{
+    margin-left: 200px;
+}
+
+.sen p{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.jou h1{
+    font-size: 60px;
+    font-weight: bolder;
+    color: #0d5bff;
+}
+
+.jou p{
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.buttons2 button{
+    color: #0d5bff;
+    border: #0d5bff 1px solid;
+    padding: 20px;
+    font-weight: bold;
+}

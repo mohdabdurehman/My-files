@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GooPage</title>
+    <link rel="icon" type="image/x-icon" href="asset 5.png" />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .top {
+        display: flex;
+      }
+      .top p {
+        padding-left: 30px;
+      }
+      .top img {
+        border-radius: 50%;
+        width: 45px;
+      }
+      .google img {
+        width: 300px;
+        margin-left: 600px;
+        margin-top: 100px;
+      }
+      .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .text input {
+        border-radius: 24px;
+        width: 300px;
+      }
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn button {
+        border-radius: 4px;
+        padding: 5px;
+        margin: 10px;
+        border: none;
+      }
+      footer {
+        margin-top: 350px;
+        margin-left: 1350px;
+      }
+      .container {
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <img src="asset 0.png" alt="logo" />
+      <p>Photo</p>
+      <p>Gmail</p>
+    </div>
+    <div class="container">
+      <div class="google">
+        <img src="asset 1.png" alt="goog" />
+      </div>
+      <div class="box">
+        <div class="text" id="text">
+          <img src="asset 6.png" alt="" />
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="search..."
+          />
+          <p id="empty"></p>
+        </div>
+        <div class="btn" id="btn">
+          <button>is a stroke of luck</button>
+          <button>Google search</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img src="pexels-betül-akyürek-19186031.jpg" alt="" />
+    </div>
+    <footer id="footer"></footer>
+    <script>
+      const container = document.querySelector(".container");
+      const search = document.querySelector("#search");
+      const text = document.getElementById("text");
+      const showType = document.getElementById("empty");
+      const btn = document.getElementById("btn");
+      const box = document.querySelector(".box");
+      const footer = document.getElementById("footer");
+      const google = document.querySelector(".google");
+
+      search.onkeydown = () => {
+        showType.innerHTML = "typing...";
+      };
+
+      btn.onclick = () => {
+        box.innerHTML = "Here is your search";
+        box.style.textAlign = "center";
+      };
+
+      window.onload = () => {
+        const today = new Date();
+        let year = today.getFullYear();
+        if (footer) {
+          footer.textContent = "Copyright © " + year;
+        }
+      };
+
+      google.onmouseover = () => {
+        google.style.backgroundColor = "blue";
+      };
+
+      google.onmouseout = () => {
+        google.style.backgroundColor = "white";
+      };
+
+      window.onscroll = () => {
+        const scrollPosition =
+          window.pageYOffset || document.documentElement.scrollTop;
+        const trigger = 500;
+
+        if (scrollPosition >= trigger) {
+          stick();
+        }
+      };
+
+      function stick() {
+        container.style.position = "fixed";
+        container.style.width = "100vw";
+        container.style.height = "600px";
+        console.log("scrolled down");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!-- two boxes beside each other with 2 div
+one left green one rigth red
+button in center and change the color 
+setInterval  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>boxes</title>
+    <style>
+      .boxes {
+        display: flex;
+      }
+      .box1 {
+        width: 200px;
+        height: 200px;
+      }
+      .box2 {
+        width: 200px;
+        height: 200px;
+        margin-left: 1200px;
+      }
+      .btn {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box1"></div>
+      <div class="box2"></div>
+    </div>
+    <div class="btn">
+      <button id="press">switch</button>
+    </div>
+
+    <script>
+      const boxes = document.querySelector(".boxes");
+      const box1 = document.querySelector(".box1");
+      const box2 = document.querySelector(".box2");
+      const btn = document.getElementById("press");
+
+      box1.style.backgroundColor = "green";
+      box2.style.backgroundColor = "red";
+
+      btn.addEventListener("mouseover", () => {
+        if (
+          box1.style.backgroundColor == "green" &&
+          box2.style.backgroundColor == "red"
+        ) {
+          box1.style.backgroundColor = "red";
+          box2.style.backgroundColor = "green";
+          console.log("true-f");
+        } else if (
+          box1.style.backgroundColor == "red" &&
+          box2.style.backgroundColor == "green"
+        ) {
+          box1.style.backgroundColor = "green";
+          box2.style.backgroundColor = "red";
+          console.log("true-ef");
+        }
+        console.log(box1.style.backgroundColor);
+      });
+
+      /*setInterval ( () => {
+            
+        } ,1000);
+        */
+    </script>
+  </body>
+</html>
